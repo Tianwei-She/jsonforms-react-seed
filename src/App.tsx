@@ -42,11 +42,16 @@ const useStyles = makeStyles({
 });
 
 const initialData = {
-  name: 'Send email to Adrian',
-  description: 'Confirm if you have passed the subject\nHereby ...',
-  done: true,
-  recurrence: 'Daily',
-  rating: 3,
+  movie_name: "Who's the Undercover?",
+  setup: "Rules of the game",
+  characters: [
+      {
+          name: "Nina",
+          personality: "Highly observant\nNotable memory capabilities, comparable to a steel trap",
+          background: "Once upon a time, while working at the library, you recognized a forgery in a rare manuscript due to a tiny misprint. This act saved the library thousands and bolstered your reputation.",
+          interpersonal_relationship: "Oscar: You two share a past, as you both dated briefly during college. Though the breakup was amicable, an undercurrent of tension always exists between the two of you. This past connection might lead you both to trust or distrust each other more during the game."
+      }
+  ]
 };
 
 const renderers = [
