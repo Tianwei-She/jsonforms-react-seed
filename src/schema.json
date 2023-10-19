@@ -1,32 +1,35 @@
 {
   "type": "object",
   "properties": {
-    "name": {
+    "movie_name": {
       "type": "string",
       "minLength": 1
     },
-    "description": {
-      "title": "Long Description",
-      "type": "string"
-    },
-    "done": {
-      "type": "boolean"
-    },
-    "due_date": {
+    "setup": {
       "type": "string",
-      "format": "date"
+      "minLength": 1
     },
-    "rating": {
-      "type": "integer",
-      "maximum": 5
-    },
-    "recurrence": {
-      "type": "string",
-      "enum": ["Never", "Daily", "Weekly", "Monthly"]
-    },
-    "recurrence_interval": {
-      "type": "integer"
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "personality": {
+            "type": "string"
+          },
+          "background": {
+            "type": "string"
+          },
+          "interpersonal_relationship": {
+            "type": "string"
+          }
+        }
+      }
     }
   },
-  "required": ["name", "due_date"]
+  "required": ["movie_name"]
 }

@@ -84,8 +84,11 @@ const App = () => {
           <Typography variant={'h4'} className={classes.title}>
             Bound data
           </Typography>
-          <div className={classes.dataContent}>
+          {/* <div className={classes.dataContent}>
             <pre id='boundData'>{stringifiedData}</pre>
+          </div> */}
+          <div className="dataContent">
+            <pre className='boundData'>{stringifiedData}</pre>
           </div>
           <Button
             className={classes.resetButton}
